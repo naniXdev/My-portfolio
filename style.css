@@ -14,6 +14,7 @@
 /* ROOT FONT SIZE: Setting the math for 'rem' units */
 html {
     font-size: 62.5%; /* 1rem = 10px */
+    scroll-behavior: smooth;
 }
 
 /* BODY: The main canvas of your website */
@@ -57,6 +58,7 @@ nav a {
     font-size: 1.8rem;
     color: white;
     margin-left: 4rem;
+    padding: 5px 0;
     font-weight: 500;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
@@ -159,10 +161,15 @@ span {
     letter-spacing: 0.1rem;
     font-weight: 600;
     transition: 0.5s ease;
+    cursor:pointer;
+    margin-top: 3rem;
 }
 
 .btn:hover {
     box-shadow: 0 0 1rem #b74b4b;
+    transform:scale3d(1.03);
+    color:black;
+    background-color:#b74b4b;
 }
 
 /*image*/
@@ -194,10 +201,50 @@ span {
     cursor: pointer;
 }
 @keyframes morphing {
-    0%, 100% { 
-        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; 
-    }
-    50% { 
-        border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%; 
-    }
+    0%, 100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+    50% {border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%;}
+}
+
+/*service section*/
+.services {
+    background: black;
+    padding: 10rem 9% 10rem; 
+}
+.heading {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.services-box {
+    flex: 1 1 30rem; 
+    background: #1a1a1a; 
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.2rem solid transparent;
+    transition: 0.5s ease;
+}
+.services-box:hover {
+    border-color: #b74b4b;
+    transform: scale(1.02);
+    box-shadow: 0 0 2rem #b74b4b;
+}
+.services-box i {
+    font-size: 7rem;
+    color: #b74b4b;
+}
+.services-box h3 {
+    font-size: 2.6rem;
+    margin: 1rem 0;
+}
+.services-box p {
+    font-size: 1.6rem;
+    line-height: 1.6;
 }
