@@ -358,3 +358,33 @@ span {
 }
 
 /*project section*/
+
+
+
+/*js code for the bounce in the home page and for Scroll Section Active Link Logic for the header*/
+@keyframes splashIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.3);
+        filter: brightness(4) blur(10px); /* The sparkle flash */
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(20px) scale(1.1); /* The water hit */
+        filter: brightness(1.5) blur(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: brightness(1);
+    }
+}
+
+/* Sticky Header Upgrade */
+header.sticky {
+    background: #000;
+    border-bottom: 2px solid #b74b4b;
+    padding: 1.5rem 9%;
+    box-shadow: 0 0 20px rgba(183, 75, 75, 0.4);
+}
+
