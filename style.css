@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap');
+
+/* GLOBAL RESET: Removes default browser styling so everything looks consistent */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none; 
+}
+
+/* ROOT FONT SIZE: Setting the math for 'rem' units */
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+/* BODY: The main canvas of your website */
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: wheat;
+}
+
+/* HEADER: The navigation bar at the top */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/* LOGO: Your 'Ruhama' branding */
+.logo {
+    font-size: 3rem;
+    color: #b74b4b;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Makes the logo slightly grow when touched */
+}
+
+/* NAVIGATION LINKS: Home, Service, Skills, etc. */
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+/* HOVER & ACTIVE STATE: Visual feedback for the menu */
+nav a:hover,
+nav a.active {
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+}
+
+/* HOME SECTION*/
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 10rem;
+    padding: 0 9%;
+}
+
+/* HOME CONTENT: Headings and Paragraphs */
+.home-content h1 {
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+/* SPAN: Used for highlighting name and specific words */
+span {
+    color: #b74b4b;
+}
+
+.home-content h3 {
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+}
+
+.home-content p {
+    font-size: 1.6rem;
+}
+
+/*the icons and links*/
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 4rem; 
+    margin-top: 3rem;
+}
+
+
+.social-group {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a:not(.link-text) {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: 0.2rem solid #b74b4b;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #b74b4b;
+    transition: 0.5s ease;
+    text-decoration: none;
+}
+
+
+.social-icons a:not(.link-text):hover {
+    background: #b74b4b;
+    color: black;
+    box-shadow: 0 0 20px #b74b4b;
+}
+
+
+.link-text {
+    margin-left: 1.5rem; 
+    font-size: 1.6rem;
+    color: #b74b4b;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.link-text:hover {
+    text-decoration: underline;
+}
+
+/*for hire me button*/
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: #b74b4b;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: black;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+
+.btn:hover {
+    box-shadow: 0 0 1rem #b74b4b;
+}
+
+/*image*/
+.home-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img img {
+   
+    width: 400px; 
+    height: 400px;
+    max-width: 80vw;
+    max-height: 80vw;
+    
+    object-fit: cover;
+    display: block;
+    border: 6px solid #b74b4b;
+    box-shadow: 0 0 30px #b74b4b;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    animation: morphing 8s ease-in-out infinite;
+    transition: 0.5s ease;
+}
+
+.home-img img:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 0 50px #b74b4b;
+    cursor: pointer;
+}
+@keyframes morphing {
+    0%, 100% { 
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; 
+    }
+    50% { 
+        border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%; 
+    }
+}
