@@ -14,6 +14,7 @@
 /* ROOT FONT SIZE: Setting the math for 'rem' units */
 html {
     font-size: 62.5%; /* 1rem = 10px */
+    scroll-behavior: smooth;
 }
 
 /* BODY: The main canvas of your website */
@@ -106,13 +107,10 @@ span {
     gap: 4rem; 
     margin-top: 3rem;
 }
-
-
 .social-group {
     display: flex;
     align-items: center;
 }
-
 .social-icons a:not(.link-text) {
     display: inline-flex;
     justify-content: center;
@@ -127,15 +125,11 @@ span {
     transition: 0.5s ease;
     text-decoration: none;
 }
-
-
 .social-icons a:not(.link-text):hover {
     background: #b74b4b;
     color: black;
     box-shadow: 0 0 20px #b74b4b;
 }
-
-
 .link-text {
     margin-left: 1.5rem; 
     font-size: 1.6rem;
@@ -177,14 +171,11 @@ span {
     justify-content: center;
     align-items: center;
 }
-
 .home-img img {
-   
     width: 400px; 
     height: 400px;
     max-width: 80vw;
     max-height: 80vw;
-    
     object-fit: cover;
     display: block;
     border: 6px solid #b74b4b;
@@ -206,4 +197,50 @@ span {
     50% { 
         border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%; 
     }
+}
+
+
+
+/*service section*/
+.services {
+    background: black;
+    padding: 10rem 9% 10rem; 
+}
+.heading {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.services-box {
+    flex: 1 1 30rem; 
+    background: #1a1a1a; 
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.2rem solid transparent;
+    transition: 0.5s ease;
+}
+.services-box:hover {
+    border-color: #b74b4b;
+    transform: scale(1.02);
+    box-shadow: 0 0 2rem #b74b4b;
+}
+.services-box i {
+    font-size: 7rem;
+    color: #b74b4b;
+}
+.services-box h3 {
+    font-size: 2.6rem;
+    margin: 1rem 0;
+}
+.services-box p {
+    font-size: 1.6rem;
+    line-height: 1.6;
 }
