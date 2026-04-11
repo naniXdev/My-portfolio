@@ -358,7 +358,56 @@ span {
 }
 
 /*project section*/
-
+.projects {
+    background: black;
+    padding: 10rem 9% 10rem;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 2.5rem;
+}
+.projects-box {
+    background: #111;
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+    border: .2rem solid #1a1a1a;
+    text-align: center;
+    transition: .5s ease;
+}
+.projects-box:hover {
+    border-color: #b74b4b;
+    transform: scale(1.03);
+    box-shadow: 0 0 2rem rgba(183, 75, 75, 0.2);
+}
+.projects-box i {
+    font-size: 4.5rem;
+    color: #b74b4b;
+    margin-bottom: 2rem;
+}
+.projects-box h3 {
+    font-size: 2.2rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+.projects-box p {
+    font-size: 1.5rem;
+    color: #eee;
+    line-height: 1.6;
+}
+.projects-box p span {
+    color: #b74b4b;
+    font-weight: 600;
+}
+@media (max-width: 991px) {
+    .projects-container {
+        grid-template-columns: 1fr; 
+    }
+}
 
 
 /*js code for the bounce in the home page and for Scroll Section Active Link Logic for the header*/
@@ -366,17 +415,14 @@ span {
     0% {
         opacity: 0;
         transform: translateY(-150px) scale(0.3);
-        filter: brightness(4) blur(10px); /* The sparkle flash */
     }
     60% {
         opacity: 1;
-        transform: translateY(20px) scale(1.1); /* The water hit */
-        filter: brightness(1.5) blur(0);
+        transform: translateY(20px) scale(1.1); 
     }
     100% {
         opacity: 1;
         transform: translateY(0) scale(1);
-        filter: brightness(1);
     }
 }
 
