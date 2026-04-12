@@ -287,7 +287,7 @@ span {
 }
 
 
-/*education sectio*/
+/*education section*/
 .education {
     background: #080808;
     padding: 10rem 9% 10rem;
@@ -406,6 +406,78 @@ span {
 @media (max-width: 991px) {
     .projects-container {
         grid-template-columns: 1fr; 
+    }
+}
+
+/*contact section*/
+.contact {
+    background: #080808;
+    padding: 10rem 9% 10rem;
+    min-height: 100vh;
+}
+.contact-details-text {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.contact-details-text p {
+    font-size: 2rem;
+    color: #fff;
+    display: inline-block;
+    margin: 0 2.5rem;
+}
+.contact-details-text i {
+    color: #b74b4b;
+    margin-right: 1rem;
+}
+.contact form {
+    max-width: 75rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.contact form .input-group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .input-box {
+    width: 49%;
+}
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background: #111;
+    border-radius: .8rem;
+    border: .2rem solid #1a1a1a;
+    margin: .8rem 0;
+    transition: .3s ease;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+    border-color: #b74b4b;
+    outline: none;
+    box-shadow: 0 0 1rem rgba(183, 75, 75, 0.1);
+}
+
+.contact form .input-group-2 textarea {
+    resize: none;
+}
+
+.contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .contact-details-text p {
+        display: block;
+        margin: 1rem 0;
+    }
+
+    .contact form .input-box {
+        width: 100%;
     }
 }
 
