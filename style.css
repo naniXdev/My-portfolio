@@ -71,6 +71,7 @@ nav a.active {
     border-bottom: 3px solid #b74b4b;
 }
 
+
 /* HOME SECTION*/
 .home {
     display: flex;
@@ -80,14 +81,10 @@ nav a.active {
     gap: 10rem;
     padding: 0 9%;
 }
-
-/* HOME CONTENT: Headings and Paragraphs */
 .home-content h1 {
     font-size: 6rem;
     font-weight: 700;
 }
-
-/* SPAN: Used for highlighting name and specific words */
 span {
     color: #b74b4b;
 }
@@ -108,10 +105,13 @@ span {
     gap: 4rem; 
     margin-top: 3rem;
 }
+
+
 .social-group {
     display: flex;
     align-items: center;
 }
+
 .social-icons a:not(.link-text) {
     display: inline-flex;
     justify-content: center;
@@ -126,11 +126,15 @@ span {
     transition: 0.5s ease;
     text-decoration: none;
 }
+
+
 .social-icons a:not(.link-text):hover {
     background: #b74b4b;
     color: black;
     box-shadow: 0 0 20px #b74b4b;
 }
+
+
 .link-text {
     margin-left: 1.5rem; 
     font-size: 1.6rem;
@@ -166,17 +170,22 @@ span {
     background-color: #b74b4b;
 }
 
+
+
 /*image*/
 .home-img {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .home-img img {
-    width: 400px; 
+   
+    width: 400px;
     height: 400px;
     max-width: 80vw;
     max-height: 80vw;
+    filter:brightness(0.7);
     object-fit: cover;
     display: block;
     border: 6px solid #b74b4b;
@@ -203,16 +212,19 @@ span {
 
 
 
+
 /*service section*/
 .services {
     background: black;
     padding: 10rem 9% 10rem; 
 }
+
 .heading {
     font-size: 5rem;
     text-align: center;
     margin-bottom: 5rem;
 }
+
 .services-container {
     display: flex;
     justify-content: center;
@@ -220,6 +232,7 @@ span {
     flex-wrap: wrap;
     gap: 2rem;
 }
+
 .services-box {
     flex: 1 1 30rem; 
     background: #1a1a1a; 
@@ -229,19 +242,23 @@ span {
     border: 0.2rem solid transparent;
     transition: 0.5s ease;
 }
+
 .services-box:hover {
     border-color: #b74b4b;
     transform: scale(1.02);
     box-shadow: 0 0 2rem #b74b4b;
 }
+
 .services-box i {
     font-size: 7rem;
     color: #b74b4b;
 }
+
 .services-box h3 {
     font-size: 2.6rem;
     margin: 1rem 0;
 }
+
 .services-box p {
     font-size: 1.6rem;
     line-height: 1.6;
@@ -249,6 +266,7 @@ span {
 
 
 /*skill section*/
+
 .skills {
     background: #080808;
     padding: 10rem 9% 10rem;
@@ -298,6 +316,7 @@ span {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 /*education section*/
@@ -370,6 +389,7 @@ span {
     font-weight: 600;
 }
 
+
 /*project section*/
 .projects {
     background: black;
@@ -422,39 +442,47 @@ span {
     }
 }
 
-/*contact section*/
+
+/* CONTACT SECTION */
 .contact {
     background: #080808;
     padding: 10rem 9% 10rem;
     min-height: 100vh;
 }
+
 .contact-details-text {
     text-align: center;
     margin-bottom: 4rem;
 }
+
 .contact-details-text p {
     font-size: 2rem;
     color: #fff;
     display: inline-block;
     margin: 0 2.5rem;
 }
+
 .contact-details-text i {
     color: #b74b4b;
     margin-right: 1rem;
 }
+
 .contact form {
     max-width: 75rem;
     margin: 0 auto;
     text-align: center;
 }
+
 .contact form .input-group {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .contact form .input-box {
     width: 49%;
 }
+
 .contact form input,
 .contact form textarea {
     width: 100%;
@@ -483,18 +511,23 @@ span {
     margin-top: 2rem;
     cursor: pointer;
 }
+
+/* Responsiveness for Mobile */
 @media (max-width: 768px) {
     .contact-details-text p {
         display: block;
         margin: 1rem 0;
     }
+
     .contact form .input-box {
         width: 100%;
     }
 }
 
 
+
 /*js code for the bounce in the home page and for Scroll Section Active Link Logic for the header*/
+
 @keyframes splashIn {
     0% {
         opacity: 0;
@@ -517,4 +550,3 @@ header.sticky {
     padding: 1.5rem 9%;
     box-shadow: 0 0 20px rgba(183, 75, 75, 0.4);
 }
-
